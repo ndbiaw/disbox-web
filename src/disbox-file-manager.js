@@ -4,7 +4,7 @@ import { sha256 } from 'js-sha256';
 
 const SERVER_URL = 'https://disboxserver.herokuapp.com';
 export const FILE_DELIMITER = '/';
-const FILE_CHUNK_SIZE = 8 * 1000 * 999 // Almost 8MB
+const FILE_CHUNK_SIZE = 50 * 1000 * 999 // Almost 8MB
 
 
 async function* readFile(file, chunkSize) {
